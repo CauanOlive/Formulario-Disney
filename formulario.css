@@ -1,0 +1,32 @@
+body { 
+	background: url(imgs_fundo.jpeg) ;
+	background-size:cover;
+	font-family:Comic Sans MS;
+	font-size:20px;
+	color:navy;
+}
+#frmLogin {
+	border:3px ridge yellow;
+	padding:15px;
+	margin:5px;
+	background-color:rgba(255, 255, 255, 0.85 );
+}
+#principal {
+	background-color:rgba(255, 255, 255, 0.7 );
+	width:850px;
+	margin:auto;
+	border:15px ridge rgb(253, 92, 83);
+}
+#principal h1 {
+	text-align:center;
+	color: blue;
+}
+
+/* Estilizando vários seletores de uma só vez */
+input, select, textarea {
+	background-color:rgb(229, 244, 250);
+}
+
+textarea:focus , input:focus, select:focus {
+	background-color:yellow;
+}

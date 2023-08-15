@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Agendamento Parques Disney</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="formulario.css">
+    </head>
+    <body>
+        <div id="principal">
+            <h1>Agendamento Parques Disney</h1>
+            <form id="frmlogin" action="agendaDisney.php" method="post">
+                <fieldset>
+                    <legend>Selecione o Parque Desejado</legend>
+                    <input type="radio" name="parque" value="DL" checked>
+                    disneyLand (California)
+                    <input type="radio" name="parque" value="DW">
+                    disney World (Orlando)
+                    <input type="radio" name="parque" value="DP">
+                    disney Paris
+                    <input type="radio" name="parque" value="DJ">
+                    disney Japão
+                </fieldset>
+                Senha:
+                <input type="password" name="senha">
+                <br>
+                Responsavel:
+                <input type="text" name="responsavel" maxlength="100" 
+                placeholder="Informe nome completo" size="30" required>
+                <br>
+                Nacionalidade:
+                <select name="nacionalidade">
+                    <option value="US">America</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BR">Brasil</option>
+                </select>
+                <br>
+                Documento de Identificação(RG, passaporte, etc.):
+                <input type="file" name="documento">
+                <br>
+                Número de pessoas(incluindo crianças):
+                <input type="number" name="pessoas" value="1" min="1" max="100">
+                <br>
+                e-mail:
+                <input type="email" name="e-mail" maxlength="100">
+                <br>
+                Data de Visita ao Parque:
+                <input type="date" name="visita" value="2023-08-08" min="2023-08-08" max="2024-12-310">
+                <br>
+                Hora da entrada:
+                <input type="time" name="horaVisita" min="08:00:00" max="22:00:00">
+                <br>
+                Cor da Pulseira:
+                <input type="color" name="pulseira" value="#0000FF">
+                <br>
+                Numero de atrações a visitar: 1
+                <input type="range" name="atraçoes" min="1" max="10">
+                10
+                <br>
+                Informe tipo de alimentação:
+                <br>
+                <textarea name="comida" placeholder="Carnivora, Vegetariana, etc" cols="80" rows="5"></textarea>
+                <hr>
+                <input type="submit" value="agendar">
+            </form>
+        </div>
+    </body>
+</html>
